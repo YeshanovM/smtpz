@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smtpz_lab
+    username: postgres
+    password: postgres23
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://smtpz.lab:8761/eureka
+  instance:
+    preferIpAddress: true
+
+message: Hello, world
