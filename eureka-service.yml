@@ -1,18 +1,16 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/smtpz_lab
-    username: postgres
-    password: postgres23
+    url: jdbc:postgresql://localhost:5433/smtpz_lab
+    username: root
+    password: root
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: none
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://smtpz.lab:8761/eureka
+      defaultZone: http://localhost:8761/eureka
   instance:
     preferIpAddress: true
